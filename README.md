@@ -17,3 +17,8 @@ The default search engine is Google but you can change it by defining your Searc
 as 
 ```config.plugins.search="your_search_engine"```
 
+Demo:
+
+https://user-images.githubusercontent.com/61783895/180267133-b7813f91-7f80-42a7-91fd-69faf9b88062.mp4
+
+
