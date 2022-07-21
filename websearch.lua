@@ -22,6 +22,7 @@ end
 
 --function to search for a given string after urlencoding it
 local function Search(text)
+    local query=text
     --encoding the text
     text=urlencode(text)
     --the default search engine is google
@@ -30,7 +31,7 @@ local function Search(text)
         searchEngine=config.plugins.search
     end
     searchEngine=string.lower(searchEngine)
-    core.log("Searching the web for \"%s\"...", text)
+    core.log("Searching the web for \"%s\"...", query)
     
     if searchEngine == "google" and text~="" then
         if PLATFORM == "Windows" then
